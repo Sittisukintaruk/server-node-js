@@ -1,0 +1,39 @@
+{
+    "hololive": [
+        {
+            "channelTitle": "Rushia Ch. 潤羽るしあ",
+            "name": "Rushia",
+            "channelId": "UCl_gCybOJRIgOXw6Qb4qJzQ",
+            "thumbnails": "https://yt3.ggpht.com/ytc/AAUvwngKVHYXNDzaEG9KIXm9lK0nBxHkA-NxlE88dLtl=s240-c-k-c0x00ffffff-no-rj",
+            "liveBroadcastContent": false
+        },
+        {
+            "channelTitle": "Botan Ch.獅白ぼたん",
+            "name": "Botan",
+            "channelId": "UCUKD-uaobj9jiqB-VXt71mA",
+            "thumbnails": "https://yt3.ggpht.com/ytc/AAUvwngRC-JqguPnj9ljVH3UulyfdlyQzLYzLeSrhvD6=s800-c-k-c0x00ffffff-no-rj",
+            "liveBroadcastContent": false
+        },
+        {
+            "channelTitle": "Kanata Ch. 天音かなた ",
+            "name": "Kanata",
+            "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+            "thumbnails": "https://yt3.ggpht.com/ytc/AAUvwniXUgLD1FepLsMoqO7HnhlgwbxGmPeqKWGv1JsO=s800-c-k-c0x00ffffff-no-rj",
+            "liveBroadcastContent": false
+        },
+        {
+            "channelTitle": "Aqua Ch. 湊あくあ",
+            "name": "Aqua",
+            "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+            "thumbnails": "https://yt3.ggpht.com/ytc/AAUvwngPGs1t6iJAT6hLWj7cBQcvJg2y_L9mzpy3lpxgqw=s800-c-k-c0x00ffffff-no-rj",
+            "liveBroadcastContent": false
+        },
+        {
+            "channelTitle": "Noel Ch. 白銀ノエル",
+            "name": "Noel",
+            "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
+            "thumbnails": "https://yt3.ggpht.com/ytc/AAUvwnijLF2X1YBVQo3rClt7ub29cYM7OzpmRmliaGbw=s800-c-k-c0x00ffffff-no-rj",
+            "liveBroadcastContent": false
+        }
+    ]
+}
