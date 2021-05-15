@@ -5,9 +5,9 @@ route.get('/', (req, res) => {
     res.json({hey: req.params})
 })
 
-route.get('/:userId', (req, res) => {
-    res.json({hey: req.params.userId})
-})
+// route.get('/:userId', (req, res) => {
+//     res.json({hey: req.params.userId})
+// })
 
 module.exports = route;
 
