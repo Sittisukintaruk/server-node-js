@@ -1,12 +1,16 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = process.env.port || 3000;
+const hololiveRouter = require("./Route/hololive");
 
-app.get('/', (req,res) => {
-    res.send("hello")
-})
+app.use(express.json());
 
-app.listen(port,() => {
-    console.log(`listening at http://localhost:${port}`)})
+app.use("/hololive", hololiveRouter);
 
+app.get("/", (req, res) => {
+  res.send("beer");
+});
 
+app.listen(port, () => {
+  console.log(`listening at http://localhost:${port}`);
+});
