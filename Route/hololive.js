@@ -1,5 +1,8 @@
 const express = require('express');
 const route  = express.Router();
+const setVideolive = require('../dataParse');
+
+setVideolive();
 
 route.get('/', (req, res) => {
     res.json({hey: req.params})
