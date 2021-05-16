@@ -5,7 +5,7 @@ const data = dataView.map((value) => value.channelId); // สร้าง อา
 const fs = require("fs");
 
 const setVideolive = () => {
-  const file = "../json/liveChannel.json";
+  const file = "./json/liveChannel.json";
   let arts = [];
   data.map((value) => {
     const channel = dataView.find((res) => res.channelId === value);

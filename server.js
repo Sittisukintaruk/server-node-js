@@ -5,6 +5,8 @@ const hololiveRouter = require("./Route/hololive");
 
 app.use(express.json());
 
+app.use(express.static('json')) 
+
 app.use("/hololive", hololiveRouter);
 
 app.get("/", (req, res) => {
