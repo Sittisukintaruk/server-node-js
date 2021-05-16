@@ -2,17 +2,26 @@ const hololiveData = require("./json/hololive.json");
 const axios = require("axios").default;
 const dataView = hololiveData.hololive; // สร้างตัวแปรที่มีข้อมูลเป็น json
 const data = dataView.map((value) => value.channelId); // สร้าง อาเรย์ เป็นชุดไอดี ของช่อง
-let arts = [];
+const fs = require("fs");
 
 const setVideolive = () => {
-  data.map(async (value, number) => {
+  const file = "../json/liveChannel.json";
+  let arts = [];
+  data.map((value) => {
     const channel = dataView.find((res) => res.channelId === value);
-    await axios
+    axios
       .get(`http://localhost:3004/hololive/${value}`)
       .then((res) => res.data)
       .then((resData) => {
         const dataformath = setlist(resData.items[0], channel);
-        setVideos(dataformath);
+        arts.push(dataformath);
+        return arts;
+      })
+      .then((art) => {
+        let datas = JSON.stringify(art, null, 2);
+        fs.writeFile(file, datas, () => {
+          console.log("write");
+        });
       })
       .catch((e) => console.error(e));
   });
@@ -32,9 +41,4 @@ const setlist = (value, channale) => {
   return channale;
 };
 
-const setVideos = (video) => {
-    arts.push(video);
-}
-
-setVideolive();
-
+module.exports = setVideolive
